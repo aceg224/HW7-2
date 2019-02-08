@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    @IBAction func gradientSlider(_ sender: Any) {
+    @IBAction func gradientSliderChange(_ sender: Any) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = gradientView.bounds
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
             alphaLabel.text = String(format:"%.2f", alphaSlider.value)
         }
     }
-    @IBAction func randomButton(_ sender: Any) {
+    @IBAction func randomButtonPress(_ sender: Any) {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = gradientView.bounds
         if gradientSwitch.isOn == true {
